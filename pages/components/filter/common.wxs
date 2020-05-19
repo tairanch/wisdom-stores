@@ -1,0 +1,65 @@
+var filters = {
+  topercent: function name (divisor, dividend) {
+    var _divisor = divisor * 1
+    var _dividend = dividend * 1
+    return _divisor / _dividend * 100
+  },
+  // 数据类型 xx.xxs  截取小数点前数据
+  numFront: function (num) {
+    var _num = num ? num.toString() : '';
+    if (_num.indexOf('.') != -1) {
+      return _num.split('.')[0]
+    } else {
+      return num
+    }
+  },
+  // 数据类型 xx.xxs  截取小数点后数据 拼接小数.
+  numLast: function (num) {
+    var _num = num ? num.toString() : '';
+    if (_num.indexOf('.') != -1) {
+      return '.' + _num.split('.')[1]
+    } else {
+      return ""
+    }
+  },
+  toFix: function (price) {
+    return parseFloat(parseFloat(price).toFixed(2))//最多保留两位小数，去除小数点后多余的0
+  },
+  //工具函数-字符长度处理
+  maxLength: function (val, ml) {
+    if (val && val.length > ml) {
+      return val.slice(0, ml) + '...'
+    } else {
+      return val
+    }
+  },
+  //工具函数-金额处理
+  currency: function (val, type) {
+    if (val >= 0) {
+      return type + Number(val).toFixed(2)
+    }
+  },
+  //工具函数-图片处理
+  imgsmall: function (val) {
+    return val + "_m.jpg"
+  },
+  // 图片处理
+  addImageSuffix: function (url, size) {
+    return url = (getRegExp('image.tairanmall.com').test(url)) ? url + size + ".jpg" : url
+  },
+  // 小数处理
+  _toFixedTwo: function (val) {
+    return parseFloat(parseFloat(val).toFixed(2))
+  }
+}
+module.exports = {
+  toFix: filters.toFix,
+  maxLength: filters.maxLength,
+  currency: filters.currency,
+  imgsmall: filters.imgsmall,
+  addImageSuffix: filters.addImageSuffix,
+  toFixedTwo: filters._toFixedTwo,
+  numFront: filters.numFront,
+  numLast: filters.numLast,
+  topercent: filters.topercent
+}

@@ -1,0 +1,66 @@
+/**index.wxss**/
+.consumer{
+  width: calc(100% - 60rpx);
+  min-height: 100vh;
+  background:linear-gradient(180deg,rgba(31,34,57,1) 0%,rgba(16,18,27,1) 100%);
+  padding: 30rpx;
+}
+
+
+/* 选项卡数据 */
+
+.consumer-antv {
+  margin-top: 40rpx;
+}
+
+.consumer-antv-tab {
+  text-align: center;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFangSC;
+  font-weight:400;
+  color:rgba(151,153,164,1);
+  line-height:26rpx;
+  margin-bottom: 24rpx;
+}
+
+.topTabSwiper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 80rpx;
+  background-color: #1F2239;
+  align-items: flex-end;
+}
+
+.topTabSwiper-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabBorer {
+  color:rgba(255,255,255,1);
+  margin-bottom: 20rpx;
+}
+
+.consumer-antv-whippletree{
+  width:40rpx;
+  height:4rpx;
+  background:rgba(162,111,255,1);
+  border-radius:2rpx;
+}
+
+
+.consumer-swiper{
+  height: 100vh;
+}
+
+.consumer-swiper-item{
+  overflow-y: scroll;
+}
+

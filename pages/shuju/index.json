@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mes-card": "../components/mesCard/index",
+    "stack-area": "../components/stack-area/index",
+    "legend-custom": "../components/legend-custom/index",
+    "pie-width": "../components/pie-width/index",
+    "pan-for-bar-chart": "../components/pan-for-bar-chart/index"
+  }
+}

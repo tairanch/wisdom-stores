@@ -1,0 +1,4 @@
+/**app.wxss**/
+page{
+  background:linear-gradient(180deg,rgba(31,34,57,1) 0%,rgba(16,18,27,1) 100%);
+}

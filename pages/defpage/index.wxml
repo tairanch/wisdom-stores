@@ -1,0 +1,12 @@
+<!-- index.wxml -->
+<view class="defpage">
+  <image class="defpage-bgimg" src="{{bgimgsrc}}"></image>
+  <view class="defpage-up">
+    <view class="defpage-font-color">欢迎来到</view>
+    <view class="defpage-font-large">泰然城智慧门店</view>
+  </view>
+  <view class="defpage-bottom">
+    <button class="defpage-loginbtn" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">立即登录</button>
+    <view class="defpage-font-gr">科学创新管理 智慧经营门店</view>
+  </view>
+</view>

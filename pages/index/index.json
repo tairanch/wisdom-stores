@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "flow-card": "../components/flowCard/index",
+    "title-arrow": "../components/titleArrow/index",
+    "photo-list": "../components/photoList/index",
+    "progress-list": "../components/progressList/index"
+  }
+}

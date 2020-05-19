@@ -1,0 +1,28 @@
+<!-- index.wxml -->
+<view class="home">
+  <view class="location">杭州上峰店</view>
+  <!-- 客流情况 -->
+  <flow-card flowdata="{{flowdata}}"></flow-card>
+  <!-- 本月目标 -->
+  <title-arrow title="本月目标" bindtap="goMore" data-type="monthmore"></title-arrow>
+  <view class="home-month">
+    <view class="home-shop">
+      <view class="home-month-title">店铺</view>
+      <view class="home-month-num">
+        <block wx:for="{{shopdata}}" wx:key="*this" wx:for-index="idx">
+          <view class="homo-month-li">
+            <view class="homo-month-up">{{item}}</view>
+            <view class="homo-month-bottom">{{shopdata_title[idx]}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="home-shop">
+      <view class="home-month-title">个人</view>
+      <progress-list progressdata="{{progressdata}}"></progress-list>
+    </view>
+  </view>
+  <!-- 到店记录 -->
+  <title-arrow title="会员到店记录" bindtap="goMore" data-type="log"></title-arrow>
+  <photo-list photoList="{{photolist}}"></photo-list>
+</view>

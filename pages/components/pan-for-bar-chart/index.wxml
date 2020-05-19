@@ -1,0 +1,2 @@
+<!-- index.wxml -->
+<ff-canvas id="mountNode" canvas-id="mountNode" opts="{{ opts }}"></ff-canvas>

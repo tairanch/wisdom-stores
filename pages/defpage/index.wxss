@@ -1,0 +1,72 @@
+/**index.wxss**/
+
+
+.defpage{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.defpage-bgimg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.defpage-up{
+  /* position: absolute; */
+  /* left: 105rpx; */
+  /* top: 95rpx; */
+  display: flex;
+  flex-direction: column;
+  padding: 95rpx 0 0 105rpx;
+}
+
+.defpage-font-color,.defpage-font-large{
+  font-size:36rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:80rpx;
+}
+
+.defpage-font-large{
+font-size:62rpx;
+}
+
+
+.defpage-bottom{
+  position: absolute;
+  bottom: 80rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
+}
+
+.defpage-loginbtn{
+  width:540rpx;
+  height:100rpx;
+  background:rgba(255,255,255,1);
+  border-radius:70rpx;
+
+  font-size:36rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(35,36,56,1);
+}
+
+.defpage-font-gr{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:#999;
+  line-height:28rpx;
+  margin: 50rpx;
+}

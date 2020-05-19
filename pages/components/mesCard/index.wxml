@@ -1,0 +1,9 @@
+<!-- index.wxml -->
+<view class="com-mescard">
+  <block wx:for="{{mescard}}" wx:for-item="item" wx:key="*this" wx:for-index="index">
+    <view class="com-mescard-content">
+      <view class="com-mescard-title">{{titlelist[index]}}</view>
+      <view class="com-mescard-num">{{item}}</view>
+    </view>
+  </block>
+</view>

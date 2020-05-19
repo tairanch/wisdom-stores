@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<view class="com-titlearrow">
+  <text class="titlearrow-title">{{title}}</text>
+  <view class="titlearrow-right">
+    <view class="titlearrow-more">更多</view>
+    <image class="titlearrow-arrow" src="{{arrow}}"></image>
+  </view>
+</view>

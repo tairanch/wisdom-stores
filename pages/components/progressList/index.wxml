@@ -1,0 +1,13 @@
+<!-- index.wxml -->
+<wxs module="filters" src="../filter/common.wxs"></wxs>
+<view class="com-progress-list">
+  <block wx:for="{{progressdata}}" wx:for-item="item" wx:key="*this">
+    <view class="com-progress-ul">
+      <view class="com-progress-name">{{item.name}}</view>
+      <view class="com-progress-progress">
+        <progress percent="{{filters.topercent(item.cell,item.all)}}" stroke-width="12" border-radius="8" activeColor="#A26FFF" backgroundColor="#A2A4AF" />
+      </view>
+      <view class="com-progress-score">{{item.cell}}/{{item.all}}</view>
+    </view>
+  </block>
+</view>

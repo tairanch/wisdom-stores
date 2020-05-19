@@ -1,0 +1,150 @@
+.mine{
+  padding: 28rpx;
+  min-height: 100vh;
+  background:linear-gradient(180deg,rgba(31,34,57,1) 0%,rgba(16,18,28,1) 100%);
+}
+
+.mine-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mine-info-photo{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+}
+
+.mine-info-qr{
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.mine-info-center{
+  width: 70%;
+  padding-left: 28rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.mine-info-name{
+  font-size:46rpx;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+}
+
+.mine-info-where{
+  font-size:22rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+}
+
+
+/* 销售情况 */
+
+.mine-sellinfo{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width: 690rpx;
+  height: 160rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.mine-shop-li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mine-shop-up{
+  font-size:40rpx;
+  font-family:PingFangSC-Semibold,PingFang SC;
+  font-weight:600;
+  color:rgba(53,53,53,1);
+  line-height:70rpx;
+}
+
+.mine-shop-bottom{
+  font-size:22rpx;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:30rpx;
+}
+
+
+/* list */
+
+/**index.wxss**/
+.consumer{
+  width: calc(100% - 60rpx);
+  min-height: 100vh;
+  background:linear-gradient(180deg,rgba(31,34,57,1) 0%,rgba(16,18,27,1) 100%);
+  padding: 30rpx;
+}
+
+
+/* 选项卡数据 */
+
+.consumer-antv {
+  margin-top: 40rpx;
+}
+
+.consumer-antv-tab {
+  text-align: center;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFangSC;
+  font-weight:400;
+  color:rgba(151,153,164,1);
+  line-height:26rpx;
+  margin-bottom: 24rpx;
+}
+
+.topTabSwiper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  z-index: 1;
+  height: 80rpx;
+  background-color: #1F2239;
+  align-items: flex-end;
+}
+
+.topTabSwiper-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabBorer {
+  color:rgba(255,255,255,1);
+  margin-bottom: 20rpx;
+}
+
+.consumer-antv-whippletree{
+  width:40rpx;
+  height:4rpx;
+  background:rgba(162,111,255,1);
+  border-radius:2rpx;
+}
+
+
+.consumer-swiper{
+  height: 100vh;
+}
+
+.consumer-swiper-item{
+  overflow-y: scroll;
+}
+

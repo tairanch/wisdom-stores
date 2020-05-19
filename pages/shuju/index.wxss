@@ -1,0 +1,156 @@
+/**index.wxss**/
+
+.shuju {
+  padding: 30rpx;
+}
+
+/* 今日销售表图 */
+
+.shuju-time {
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 42rpx;
+  text-align: center;
+  margin: 36rpx 0;
+}
+
+.shuju-world {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.shuju-world-up {
+  font-size: 25rpx;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: rgba(151, 153, 164, 1);
+  line-height: 24rpx;
+}
+
+.shuju-world-botton {
+  font-size: 40rpx;
+  font-family: DIN-Medium, DIN;
+  font-weight: 500;
+  color: rgba(151, 153, 164, 1);
+  line-height: 36rpx;
+}
+
+.shuju-world-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shuju-progress_box {
+  position: relative;
+  width: 328rpx;
+  height: 328rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 328rpx;
+  height: 328rpx;
+}
+
+.progress_canvas {
+  width: 328rpx;
+  height: 328rpx;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_info_title {
+  font-size: 25rpx;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 24rpx;
+  margin: 20rpx 0;
+}
+
+.progress_info {
+  font-family: DIN-Medium, DIN;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 36rpx;
+}
+
+.progress_info_big {
+  font-size: 58rpx;
+}
+
+.progress_info_small {
+  font-size: 34rpx;
+}
+
+/* 选项卡数据 */
+
+.shuju-antv {
+  margin-top: 40rpx;
+}
+
+.shuju-antv-tab {
+  text-align: center;
+  font-size:28rpx;
+  font-family:PingFangSC-Regular,PingFangSC;
+  font-weight:400;
+  color:rgba(151,153,164,1);
+  line-height:26rpx;
+}
+
+.topTabSwiper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topTabSwiper-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabBorer {
+  color:rgba(255,255,255,1);
+  margin-bottom: 20rpx;
+}
+
+.shuju-antv-whippletree{
+  width:40rpx;
+  height:4rpx;
+  background:rgba(162,111,255,1);
+  border-radius:2rpx;
+}
+
+/* 图表内容 */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_con {
+  height:902rpx;
+  background:rgba(46,51,74,1);
+  box-shadow:0px 2rpx 10rpx 0px rgba(0,0,0,0.5);
+  border-radius:20rpx;
+  color: wheat;
+}
+
+.shuju-chart-up{
+  height: 450rpx;
+}

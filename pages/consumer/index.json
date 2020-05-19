@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "photo-list": "../components/photoList/index"
+  }
+}

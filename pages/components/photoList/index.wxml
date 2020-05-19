@@ -1,0 +1,21 @@
+<!-- index.wxml -->
+<view class="com-photo-list">
+  <block wx:for="{{photoList}}" wx:for-item="item" wx:key="*this">
+    <view class="com-photo-ul" bindtap="openEdit" data-item="{{item}}">
+      <view class="com-photo-left">
+        <view class="photo-ul">
+          <block wx:for="{{item.imglist}}" wx:for-item="cell" wx:key="*this">
+            <image class="photo-img" src="{{cell}}" lazy-load="false"></image>
+          </block>
+        </view>
+        <view class="photo-name">
+          <view class="photo-title">{{item.name}}</view>
+          <view class="photo-time">{{item.time}}</view>
+        </view>
+      </view>
+      <view class="com-photo-right">
+        <image wx:if="{{item.showarrow}}" class="photo-arrow" src="{{arrow}}"></image>
+      </view>
+    </view>
+  </block>
+</view>

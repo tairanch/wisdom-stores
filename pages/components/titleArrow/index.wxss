@@ -1,0 +1,34 @@
+/**flowcard.wxss**/
+.com-titlearrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx 0;
+}
+
+.titlearrow-title{
+  font-size:32rpx;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:32rpx;
+}
+
+.titlearrow-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titlearrow-more{
+  font-size:26rpx;
+  font-weight:400;
+  color:rgba(151,153,164,1);
+  line-height:26rpx;
+  margin-right: 20rpx;
+}
+
+.titlearrow-arrow{
+  width: 9rpx;
+  height: 17rpx;
+}

@@ -1,0 +1,48 @@
+<view class="mine">
+  <!-- 个人信息 -->
+  <view class="mine-info">
+    <view class="mine-info-left">
+      <image class="mine-info-photo" src="{{defimg}}"></image>
+    </view>
+    <view class="mine-info-center">
+      <text class="mine-info-name">徐凤年</text>
+      <text class="mine-info-where">杭州网啊电源</text>
+    </view>
+    <view class="mine-info-right">
+      <image class="mine-info-qr" src="{{defimg}}"></image>
+    </view>
+  </view>
+  <!-- 销售情况 -->
+  <view class="mine-sellinfo">
+    <block wx:for="{{shopdata}}" wx:key="*this" wx:for-index="idx">
+      <view class="mine-shop-li">
+        <view class="mine-shop-up">{{item}}</view>
+        <view class="mine-shop-bottom">{{shopdata_title[idx]}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 榜单 -->
+  <view class="mine-sell-list">
+    <view class="consumer">
+      <view class="consumer-antv">
+        <view class='topTabSwiper'>
+          <block wx:for="{{tablist}}" wx:for-index="index" wx:key="*this">
+            <view class="topTabSwiper-content">
+              <view class="consumer-antv-tab {{currentData == index ?'tabBorer':''}}" data-current="{{index}}" bindtap='checkCurrent'>
+                {{tablist[index]}}
+              </view>
+              <view class="consumer-antv-whippletree" wx:if="{{currentData == index}}"></view>
+            </view>
+          </block>
+        </view>
+        <swiper current="{{currentData}}" class='consumer-swiper' duration="300" bindchange="bindchange">
+          <swiper-item class="consumer-swiper-item" wx:for="{{tablist}}" wx:for-index="index" wx:key="*this">
+            <scroll-view style="height: 100%;" scroll-y="true" bindscrolltolower="reactBottom" bindscrolltoupper='refreshTop'>
+              <goods-info photoList="{{photolist}}"></goods-info>
+            </scroll-view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>

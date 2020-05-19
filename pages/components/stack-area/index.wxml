@@ -1,0 +1,2 @@
+<!-- index.wxml -->
+<ff-canvas id="stack-are-dom" canvas-id="stack-area" opts="{{ opts }}"></ff-canvas>

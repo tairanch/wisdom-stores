@@ -1,0 +1,25 @@
+<!-- index.wxml -->
+<wxs module="filters" src="../filter/common.wxs"></wxs>
+<view class="com-flow-card">
+  <view class="flow-ul">
+    <view class="flow-title"></view>
+    <view class="flow-title">客流</view>
+    <view class="flow-title flew-width-50">销售额(元)</view>
+  </view>
+  <view class="flow-ul">
+    <view class="flow-title">今日</view>
+    <view class="flow-size flow-title">{{flowdata.yestoday_flow}}</view>
+    <view class="flow-size flow-title flew-width-50">
+      {{filters.numFront(flowdata.yestoday_sell)}}
+      <view class="flow-smallsize">{{filters.numLast(flowdata.yestoday_sell)}}</view>
+    </view>
+  </view>
+  <view class="flow-ul">
+    <view class="flow-title">昨日</view>
+    <view class="flow-size flow-title">{{flowdata.today_flow}}</view>
+    <view class="flow-size flow-title flew-width-50">
+      {{filters.numFront(flowdata.today_sell)}}
+      <view class="flow-smallsize">{{filters.numLast(flowdata.today_sell)}}</view>
+    </view>
+  </view>
+</view>

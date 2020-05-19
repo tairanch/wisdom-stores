@@ -1,0 +1,75 @@
+<!-- index.wxml -->
+<wxs module="filters" src="../components/filter/common.wxs"></wxs>
+<view class="shuju">
+  <!-- 今日销售 -->
+  <view class="shuju-progress">
+    <view class="shuju-time">12/09 星期四</view>
+    <view class="shuju-world">
+      <view class="shuju-world-content">
+        <text class="shuju-world-up">今日客流</text>
+        <view class="shuju-world-botton">1210</view>
+      </view>
+      <view class="shuju-world-content">
+        <view class='shuju-progress_box'>
+          <canvas class="progress_bg" canvas-id="canvasProgressbg"></canvas>
+          <canvas class="progress_canvas" canvas-id="canvasProgress"></canvas>
+          <view class="progress_text">
+            <text class='progress_info_title'>今日销售</text>
+            <view class='progress_info'>
+              <text class="progress_info_small">￥</text>
+              <text class="progress_info_big">{{filters.numFront(progress_txt)}}</text>
+              <text class="progress_info_small">{{filters.numLast(progress_txt)}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="shuju-world-content">
+        <text class="shuju-world-up">订单笔数</text>
+        <view class="shuju-world-botton">60</view>
+      </view>
+    </view>
+  </view>
+  <!-- 会员详情 -->
+  <mes-card mescard="{{mescard}}"></mes-card>
+  <!-- tab 切换 -->
+  <view class="shuju-antv">
+    <view class='topTabSwiper'>
+      <block wx:for="{{tablist}}" wx:for-index="index" wx:key="*this">
+        <view class="topTabSwiper-content">
+          <view class="shuju-antv-tab {{currentData == index ?'tabBorer':''}}" data-current="{{index}}" bindtap='checkCurrent'>
+            {{tablist[index]}}
+          </view>
+          <view class="shuju-antv-whippletree" wx:if="{{currentData == index}}"></view>
+        </view>
+      </block>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="shuju-chart-up">
+            <stack-area></stack-area>
+          </view>
+          <view class="shuju-chart-up">
+            <legend-custom></legend-custom>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="shuju-chart-up">
+            <pie-width></pie-width>
+          </view>
+          <view class="shuju-chart-up">
+            <pan-for-bar-chart></pan-for-bar-chart>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>w3</view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>w4</view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
